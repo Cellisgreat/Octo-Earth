@@ -1,0 +1,151 @@
+{
+  "prepared_local_date": "2026-10-27",
+  "preset": "hypothetical",
+  "environment_version": "controlled-target-hold-v1",
+  "mission_scope": {
+    "initial_orbit_AU": 1.0,
+    "target_orbit_AU": 2.7,
+    "mission_budget_simulated_years": 10000.0,
+    "climate_target_K": 288.0,
+    "climate_tolerance_K": 5.0,
+    "active_hold_simulated_years_default": 200.0,
+    "passive_high_fidelity_coast_is_separate": true
+  },
+  "internal_orbit_tolerances_not_official": {
+    "target_semimajor_axis_tolerance_AU": 0.05,
+    "orbital_plane_inclination_max_degrees": 5.0,
+    "absolute_final_eccentricity_max": 0.05,
+    "rotation_axis_tilt_modelled": false,
+    "supplied_pdfs_numeric_rotation_axis_tilt_or_eccentricity_change_threshold": null
+  },
+  "hypothetical_configuration_estimates": {
+    "required_delta_v_m_s": 11658.32343872029,
+    "earth_moon_orbital_energy_change_J": 1.6968069842727567e+33,
+    "minimum_launcher_energy_draw_J": 1.6641560248976425e+35,
+    "launcher_peak_demand_W": 6.337617562805791e+24,
+    "estimated_electricity_at_target_W": 1.114426600327942e+25,
+    "estimated_10000_year_energy_availability_J": 3.816862888250906e+36,
+    "reaction_mass_required_at_max_speed_kg": 1.4149856315759055e+22,
+    "reaction_mass_available_kg": 3e+22,
+    "reaction_mass_required_lunar_masses": 0.1926254099866824,
+    "analytic_gate_verdict": "FEASIBLE within this model (physically hypothetical scale)",
+    "verdict_caveat": "Within-model analytic screen only; not real-world feasibility or hardware evidence."
+  },
+  "photovoltaic_field_estimates": {
+    "collector_count": 5000000.0,
+    "collector_orbit_AU": 0.5,
+    "intercepted_solar_fraction": 0.3,
+    "total_area_m2": 2.1092203436985383e+22,
+    "square_side_each_km": 64949.52415065931,
+    "total_mass_kg": 2.1092203436985384e+21,
+    "mass_fraction_of_moon": 0.02871332573212685,
+    "electrical_delivery_at_1_AU_W": 1.2899135641908812e+25,
+    "electrical_delivery_at_target_W": 1.114426600327942e+25,
+    "is_engineering_design": false
+  },
+  "space_mirror_estimates": {
+    "area_m2": 1600000000000000.0,
+    "mass_kg": 8000000000000.0,
+    "reflectivity": 0.9,
+    "capacity_at_target_W": 1.900982378656575e+17,
+    "capacity_relative_to_present_sunlight": 1.095354969890289,
+    "is_deployment_design": false
+  },
+  "selected_single_enablers": [
+    {
+      "id": "E1",
+      "name": "Access to a finite 3e22 kg asteroid",
+      "selection_reason": "Without reaction mass the modeled recoil mechanism cannot transfer momentum to Earth.",
+      "scope": "A stated asteroid mass reservoir is available as reaction mass; the simulated launch packets are finite and Earth recoils when they are ejected. This is one resource-access assumption, not a launcher-system bundle.",
+      "gap": "No asteroid is actually captured or docked; access to and placement of a 3e22 kg body is far beyond demonstrated capability.",
+      "supporting_components": [
+        {
+          "name": "Launch ring + 8 launch arms (mass driver)",
+          "use": "Accelerates each packet to the commanded speed in the commanded direction; all 8 arms (each 2 R_E long, roots on a 1.25 R_E ring) throw one packet together."
+        },
+        {
+          "name": "Arm power conditioning + energy reserve",
+          "use": "Turns the arm electricity into launch energy; a reserve covers launches when the beams are short."
+        },
+        {
+          "name": "Directional arm radiators",
+          "use": "Reject the launcher and rectenna waste heat to space, away from Earth."
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "name": "Thin-film photovoltaic collector field",
+      "selection_reason": "The modeled mission needs a physical energy source; sunlight is traced through panel conversion and the downstream ledger.",
+      "scope": "Five million thin-film collectors at 0.5 AU intercept the configured 30 % of the Sun's output and convert sunlight into electricity. This is one power-generation enabler; microwave transmitters, rectennas and factories are supporting components, not bundled enablers.",
+      "gap": "A Dyson-swarm-scale photovoltaic field (~1e13 x all solar panels ever built); collector area and mass are far beyond industry. The power-transfer chain separately assumes about 1e24 W over 0.5-3 AU, pointing near 1e-12 rad, and rectenna beam intensity around 2e8 times sunlight.",
+      "supporting_components": [
+        {
+          "name": "Microwave phased-array transmitter (one per collector)",
+          "use": "Turns the electricity into a focused 5.8 GHz beam aimed at the arms; suppresses side lobes so spill misses Earth."
+        },
+        {
+          "name": "Rectenna on each of the 8 arm tips",
+          "use": "Receives the microwaves and turns them back into electricity for the launcher."
+        },
+        {
+          "name": "Sail-tilt station keeping (on each collector)",
+          "use": "Uses part of the light-pressure push to hold the collector in its slot (no propellant)."
+        },
+        {
+          "name": "Clear sunlight lane",
+          "use": "Collectors leave a moving gap so Earth and Mars see the whole Sun."
+        },
+        {
+          "name": "Collector factories (Mercury material)",
+          "use": "Build the belt up and replace aged panels."
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "name": "Space-mirror ring",
+      "selection_reason": "Without added reflected sunlight, the simplified climate model falls into a cold state at the target orbit.",
+      "scope": "A single mirror-ring technology reflects sunlight; the configured 1.6e15 m^2 film area can supply up to 1.10 x today's sunlight at 2.7 AU in the climate model. The agent sets the light level.",
+      "gap": "Plain reflection is known physics, but the configured 1.6e15 m^2 and formation flight/pointing are far beyond industry; this is not a physical deployment design.",
+      "supporting_components": [
+        {
+          "name": "Terminator orbit at 20 Earth radii + pointing (45 degree tilt)",
+          "use": "Keeps the mirrors in sunlight and aims their light at Earth or past it (the agent's action a4)."
+        }
+      ]
+    }
+  ],
+  "failed_concepts": {
+    "required_delta_v_m_s": 11658.30562662991,
+    "average_force_N": 2.2062324512077542e+17,
+    "laser_dyson": {
+      "beam_required_W": 6.614118494669377e+25,
+      "safe_power_screen_W": 3409887195627418.5,
+      "temperature_estimate_K": 43992.65458224483
+    },
+    "hydrogen": {
+      "required_kg": 1.9492216482302657e+21,
+      "100_Earth_radii_scoop_kg": 1346160458366048.5,
+      "100_Earth_radii_scoop_fraction": 6.9061435860219e-07,
+      "all_solar_wind_fraction": 0.24284770304586753,
+      "all_solar_wind_final_AU": 1.2211448673288816
+    },
+    "lorentz_arms": {
+      "required_current_A_per_arm": 4.35126717065341e+17,
+      "quench_screen_A": 225000000.0,
+      "best_force_at_quench_N": 114082239.04743645,
+      "arrival_current_A_per_arm": 8.602686310624097e+17
+    }
+  },
+  "validation_status": {
+    "pytest_tests_passed": 46,
+    "physics_checks_passed": 22,
+    "guide_benchmarks_passed": 10,
+    "current_ppo_retraining_performed": false,
+    "current_target_hold_evaluation_performed": false,
+    "hardware_or_structural_certification_performed": false,
+    "claim": "No current-version PPO success or hardware certification is claimed."
+  },
+  "required_context": "Physical estimates, reward and training performance are separate. Simulated years are not wall-clock time."
+}

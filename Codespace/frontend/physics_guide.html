@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OCTO-EARTH | Participant-guide crosswalk</title>
+<style>
+:root{color-scheme:dark;--bg:#07111c;--panel:#101d2a;--panel2:#132334;--line:#2b4154;--ink:#e8f0f7;--muted:#a9bac9;--cyan:#83d7e7;--gold:#f3c876;--green:#81d5a3;--amber:#f0c36b;--rose:#f28f8f;--link:#a8dcff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0,#152b3d 0,#07111c 48rem);color:var(--ink);font:15px/1.58 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:var(--link)}a:hover{color:#fff}button{font:inherit;color:inherit;background:#193047;border:1px solid var(--line);padding:8px 12px;border-radius:7px;cursor:pointer}button:hover{background:#23435c}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}.top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:760;letter-spacing:.08em}.top .spacer{flex:1}.pill{border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted);font-size:12px;text-decoration:none}.hero{padding:44px 0 26px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--cyan);font-size:12px;font-weight:700}.hero h1{font-size:clamp(32px,5vw,58px);line-height:1.04;letter-spacing:-.035em;margin:12px 0}.hero p{max-width:850px;color:var(--muted);font-size:17px}.warning{border:1px solid #785c31;background:#261f13;color:#f6dfa9;padding:12px 15px;border-radius:10px;margin:18px 0}.meta{font-size:12px;color:var(--muted)}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.nav a{font-size:12px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted)}.nav a:hover{color:var(--ink);border-color:var(--cyan)}section{padding:22px 0;border-top:1px solid var(--line);scroll-margin-top:12px}h2{font-size:25px;line-height:1.2;margin:0 0 12px}h3{font-size:17px;margin:15px 0 6px;color:var(--cyan)}p{margin:8px 0}.lede{max-width:880px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:12px;padding:15px}.card.span6{grid-column:span 6}.card.span4{grid-column:span 4}.card.span12{grid-column:span 12}.card h3{margin-top:0}.stat{font-size:25px;font-weight:750;color:var(--gold);letter-spacing:-.025em}.stat small{font-size:13px;color:var(--muted);font-weight:500;letter-spacing:0}.callout{border-left:3px solid var(--cyan);padding:8px 12px;background:#0d1b28;color:var(--muted);margin:10px 0}table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px}th{text-align:left;color:#d8e8f4;background:#192d3e}td,th{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{white-space:nowrap}.status{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:11px;font-weight:700;white-space:nowrap}.status.pass{color:var(--green);border-color:#276145;background:#10251c}.status.fail{color:var(--rose);border-color:#74413f;background:#2a1718}.status.pending{color:var(--amber);border-color:#6b5730;background:#282213}.tiny{font-size:12px;color:var(--muted)}.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#dce9f3;background:#0a1520;border:1px solid #263a4c;padding:2px 5px;border-radius:4px}.good{color:var(--green)}.caution{color:var(--amber)}.bad{color:var(--rose)}ul{padding-left:21px}li{margin:4px 0}.table-scroll{overflow-x:auto}.foot{padding:24px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.print-only{display:none}
+@media(max-width:800px){.card.span6,.card.span4{grid-column:span 12}table{font-size:12px}td,th{padding:7px 8px}.hero{padding-top:28px}}
+@media print{ :root{color-scheme:light;--bg:#fff;--panel:#fff;--panel2:#f6f8fa;--line:#cbd3db;--ink:#151b22;--muted:#394754;--cyan:#125e72;--gold:#805300;--green:#176a3b;--amber:#805300;--rose:#8b2828;--link:#135787}body{background:#fff;color:#151b22;font-size:9.4pt}.wrap{width:100%;max-width:none}.top{padding:0 0 8px}.top .pill,.nav,button{display:none}.hero{padding:12px 0}.hero h1{font-size:28pt}.hero p{font-size:11pt}.grid{gap:7px}.card{break-inside:avoid;padding:9px}.card.span6{grid-column:span 6}.card.span4{grid-column:span 4}section{padding:12px 0;break-inside:auto}h2{font-size:16pt}h3{font-size:11pt}table{font-size:8pt;break-inside:auto}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}td,th{padding:4px 5px}.warning,.callout{background:#f4f5f6}.foot{padding:10px 0}.print-only{display:block}.status{font-size:8pt}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="brand">OCTO-EARTH</span>
+    <span class="meta">Challenge physics &amp; validation crosswalk</span>
+    <span class="spacer"></span>
+    <a class="pill" href="index.html">Main simulation</a>
+    <a class="pill" href="failed.html">Four failed-model screens</a>
+    <span id="liveStatus" class="pill">guide benchmarks: loading</span>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Based on the supplied participant guide and Octo-Earth problem statement</div>
+      <h1>What is modeled,<br>what is only a demonstration.</h1>
+      <p>This page maps the supplied rules, physics estimates, ten validation benchmarks, enablers and presentation criteria to the OCTO-EARTH prototype. The main model moves Earth only through reaction-mass ejections; the agent never edits Earth’s velocity directly. Passing a calculation benchmark is not the same as validating every hardware design or winning condition.</p>
+      <div class="warning"><b>Important rulebook caveat:</b> the participant guide requires the rulebook’s safety thresholds to hold for the entire run, but the supplied PDFs do not include those threshold values. They are not invented here. The guide does explicitly require every structural safety factor to remain at or above <b>1.5</b>; this project does <b>not</b> certify its launcher or reflector structure to that requirement.</div>
+      <div class="meta">Reviewed 2026-10-27 against: <i>Planetary Propulsion Simulation Hackathon — Participant Guide</i> (especially pp. 2–12); <i>TF'26 Problem Statements</i>, Octo-Earth section, pp. 42–43. The rulebook remains authoritative if it differs from the guide. <a href="TECHNICAL_BRIEF.pdf" download>Download the printable technical brief</a>.</div>
+      <nav class="nav" aria-label="page sections">
+        <a href="#conditions">Winning conditions</a><a href="#scales">Scale estimates</a><a href="#physics">Physics &amp; limits</a><a href="#structure">Structure &amp; safety</a><a href="#benchmarks">Ten benchmarks</a><a href="#enablers">Enablers &amp; energy</a><a href="#crosswalk">Project crosswalk</a><a href="#judging">Judging &amp; submission</a>
+      </nav>
+    </div>
+
+    <section id="conditions">
+      <h2>1 · Challenge acceptance criteria</h2>
+      <div class="grid">
+        <div class="card span4"><h3>Reach the orbit</h3><div class="stat">≤ 10,000 <small>simulated years</small></div><p class="tiny">Earth must reach the target orbit. Keep simulated mission time separate from wall-clock runtime.</p></div>
+        <div class="card span4"><h3>Stay safe throughout</h3><div class="stat">whole run <small>not just the endpoint</small></div><p class="tiny">Every applicable safety threshold must hold throughout; supplied PDFs do not expose the rulebook thresholds.</p></div>
+        <div class="card span4"><h3>Structure survives</h3><div class="stat">SF ≥ 1.5 <small>every structural element</small></div><p class="tiny">Check every segment and hinge, not only total force or an average arm load.</p></div>
+        <div class="card span6"><h3>Validated, conservative physics</h3><p>Every applicable benchmark passes. Book every force with its reaction partner; conserve energy and momentum. A force internal to Earth/its structure cannot move Earth’s centre of mass.</p></div>
+        <div class="card span6"><h3>No unresolved flags</h3><p>Only unresolved flags that arise from explicitly declared hypothetical enablers are allowed. Do not hide infeasibility, climate failure, overload or missing physics behind an animation.</p></div>
+      </div>
+      <div class="callout"><b>How the current RL episode handles arrival:</b> it no longer ends at the first in-window state. The agent stays in control and must keep the orbit and climate within their configured tolerances for <code>validate_years</code> (default 200 simulated years); leaving tolerance resets that hold clock. This project-specific hold is inside the 10,000-year episode budget and is <b>not</b> an additional rulebook threshold. High-fidelity evaluation then runs a separate <code>validate_years</code> zero-ejection coast as a passive stability test; that coast is not PPO training feedback. A current-version PPO evaluation has not yet been run, so this implemented criterion is not a success claim.</div>
+      <div class="warning"><b>Project orbit tolerances versus requested tilt:</b> the hypothetical preset uses target semimajor axis 2.7 AU (±0.05 AU), <b>orbital-plane inclination ≤5°</b> (degrees, not 5% and not Earth’s spin-axis/obliquity), and <b>absolute final eccentricity ≤0.05</b> (not a limit on how much eccentricity may change). These are project-internal tolerances only. The reviewed PDFs do not specify numeric rotation-axis-tilt or eccentricity-change thresholds. Earth’s axial tilt, spin, seasons and related habitability effects are not simulated.</div>
+    </section>
+
+    <section id="scales">
+      <h2>2 · Estimates that set the scale</h2>
+      <p class="lede">The supplied guide’s rounded planning values are a quick reality check, not substitutes for the running model’s own calculations.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Quantity</th><th>Guide estimate</th><th>Interpretation</th></tr></thead>
+        <tbody>
+          <tr><td>Earth–Moon system orbital-energy increase, 1 → 2.7 AU</td><td>≈ <b>1.7 × 10³³ J</b></td><td>About 50 days of the Sun’s entire output. This is the orbital-energy change, not the launcher’s required input energy.</td></tr>
+          <tr><td>Slow-spiral velocity change</td><td>≈ <b>11.6 km/s</b></td><td>Difference between circular speeds at 1 AU and 2.7 AU.</td></tr>
+          <tr><td>Hohmann transfer, 1 → 2.7 AU</td><td>≈ <b>6.2 + 4.8 km/s</b></td><td>Two impulsive burns; it is not the same trajectory as a slow spiral.</td></tr>
+          <tr><td>Average power / constant tangential force over 10,000 y</td><td>≈ <b>5.4 × 10²¹ W</b> / <b>2.2 × 10¹⁷ N</b></td><td>Orders of magnitude larger than any present-day planetary-scale propulsion.</td></tr>
+          <tr><td>Illustrative Lorentz force, 1 MA × 12,000 km × 5 nT</td><td>≈ <b>60 N</b></td><td>Roughly 10¹⁵ times below the force estimate; a field is not a reactionless wall.</td></tr>
+          <tr><td>Basic radiative equilibrium</td><td>≈ <b>254 K at 1 AU</b>; ≈ <b>155 K at 2.7 AU</b></td><td>For albedo 0.306 at 1 AU and inverse-square sunlight; without added heat, liquid water is not maintained at 2.7 AU.</td></tr>
+          <tr><td>Energy bonus scale for 1.7 × 10³³ J</td><td>≈ <b>4 × 10¹⁸ m²</b> of solar collectors at 1 AU, or ≈ <b>5 × 10¹⁸ kg</b> D–T fuel</td><td>These are scale estimates. A bonus requires a real modeled source to deliver the energy within the deadline, with supply and waste heat accounted for.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout"><b>Do not conflate energy figures.</b> The project’s calculations report also contains <b>1.66 × 10³⁵ J</b>, a separate minimum-energy estimate for its modeled asteroid launcher. It is not the guide’s <b>1.70 × 10³³ J</b> Earth–Moon orbital-energy increase; different system boundaries and propulsion accounting are involved.</div>
+    </section>
+
+    <section id="physics">
+      <h2>3 · Physics that must be represented honestly</h2>
+      <div class="grid">
+        <div class="card span6"><h3>Gravity, bodies and numerical method</h3><ul>
+          <li>At minimum model the Sun, Earth and Moon; add planets when feasible. This project includes Mars, Mercury, Venus and Jupiter; planets beyond Jupiter are omitted.</li>
+          <li>Orbit / field calculations use 64-bit numbers. The high-fidelity model uses N-body gravity and a fourth-order Yoshida symplectic integrator; timestep-halving convergence and no-push energy checks are automated.</li>
+          <li>The fast training model uses exact hierarchical Kepler propagation and approximate planetary kicks; the Sun’s tide on the Moon is omitted in that model. The high-fidelity model includes it.</li>
+          <li>Encke-style deviation integration is used for the collector-belt station-keeping study around an exact reference orbit; do not interpret that as Earth’s primary orbit integrator.</li>
+          <li>Fast vibration, circuit and thermal response require their own shorter physical time step. The current project does not solve those fast hardware dynamics.</li>
+        </ul></div>
+        <div class="card span6"><h3>Momentum and the Lorentz force</h3><ul>
+          <li>For a conductor, integrate <span class="formula">dF = I dl × B</span>; a scalar <span class="formula">ILB</span> is only a magnitude estimate.</li>
+          <li>Current needs a closed return path. A closed loop in a uniform field has zero net force. Equal 45° arms also cancel in a uniform field.</li>
+          <li>State where the reaction lands: Earth’s core, another arm or the ring is internal; external plasma, photons, an asteroid, or escaping ejecta can transfer external momentum if the partner is modeled.</li>
+          <li>The Sun’s field or Earth’s magnetic field is not a reactionless wall. Identify and model the source/current/plasma carrying the momentum.</li>
+        </ul></div>
+        <div class="card span12"><h3>Habitability is a model output, not a promise</h3><p>At 2.7 AU the guide’s simple equilibrium estimate is about 155 K. The project’s two-box climate model has a calibrated warm branch and an ice–albedo feedback; its no-mirror snowball result is about 152 K. Those values differ because the approximations differ. The project shows temperature, ice line and a growing-area indicator, but it is not a full atmosphere/ocean/biology model and does not certify liquid water, air, radiation shielding or a safe Moon for every possible trajectory.</p><p class="tiny">The blackbody benchmark (254 K at 1 AU) is intentionally separate from the project climate model’s present-day 288 K calibration, which represents greenhouse warming.</p></div>
+      </div>
+    </section>
+
+    <section id="structure">
+      <h2>4 · Structural loads and safety factor</h2>
+      <div class="callout"><b>Required definition:</b> <span class="formula">SF = allowable stress / actual stress</span>; the guide requires <b>SF ≥ 1.5</b>. For a member, screen combined normal stress with <span class="formula">σ = N/A ± Mc/I</span> and Euler buckling with <span class="formula">Pcr = π²EI/L²</span>.</div>
+      <p>Check each segment and hinge for axial and bending load, Euler buckling, self-weight, gravity variation with altitude, rotation, Coriolis effects, moving-joint inertia, Lorentz loads, heat and vibration. A 12,000 km arm is not a small attachment; its length exceeds Earth’s radius, gravity changes along it, and its natural vibration can be very slow.</p>
+      <div class="grid">
+        <div class="card span6"><h3>What this build does</h3><ul>
+          <li>Runs the guide’s cantilever self-weight formula check and exposes general axial/bending/Euler screening helpers in <code>octoearth_rl.py</code>.</li>
+          <li>The current p40 model 1 shows a transparent assumed allowable arm load, its load ratio and the implied proxy <span class="formula">SF = 1 / load_ratio</span>.</li>
+          <li>Warns when that proxy drops below 1.5 (about 36.7% beam power under this model’s proportional-load assumption).</li>
+          <li>Keeps the later break cascade only as a deterministic visual demonstration.</li>
+        </ul></div>
+        <div class="card span6"><h3>What remains unverified</h3><ul>
+          <li>No real arm material, segment cross-section, hinge geometry, connection strength, motor, fatigue curve or allowable stress is specified.</li>
+          <li>The main launcher’s packet acceleration, segment/hinge load distribution, buckling, self-weight, rotation and vibration are not coupled to the simulation.</li>
+          <li>The p40 proxy is not an engineering safety factor and does not satisfy or certify the challenge’s SF ≥ 1.5 condition.</li>
+          <li>The PDFs refer to a separate rulebook appendix for other safety thresholds; its values were not supplied, so none are guessed.</li>
+        </ul></div>
+      </div>
+      <p class="tiny">The p40 model’s illustrative support first reaches its assumed allowable load at 55% beam power. That is already below the guide’s design requirement: SF falls under 1.5 at about 36.7%. The later cascade near 85% is a visual failure sequence, not a prediction of real hardware failure.</p>
+    </section>
+
+    <section id="benchmarks">
+      <h2>5 · Ten participant-guide validation benchmarks</h2>
+      <p class="lede">The supplied guide lists these exact acceptance values on page 9. The full <code>python octoearth_rl.py --check</code> suite and automated tests run them; live results appear when this page is opened through the running OCTO-EARTH server.</p>
+      <div class="table-scroll"><table id="benchTable">
+        <thead><tr><th>#</th><th>Benchmark input</th><th>Expected result</th><th>Tolerance</th><th>Code result</th><th>Measured detail</th></tr></thead>
+        <tbody>
+          <tr data-bench="1"><td>1</td><td>Wire: I=10 A; L=2 m along x; B=0.5 T along y</td><td>10 N along +z</td><td>1e-9</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="2"><td>2</td><td>Closed loop in a uniform magnetic field</td><td>Net force 0</td><td>1e-9 of I·L·B</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="3"><td>3</td><td>Long straight wire: 1 kA at 1 m</td><td>2.000 × 10⁻⁴ T</td><td>1e-6 relative</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="4"><td>4</td><td>Kepler orbit: a=1 AU, e=0.3, ten periods</td><td>Return to start; energy conserved</td><td>1e-6 a; 1e-9 energy</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="5"><td>5</td><td>Solar-system N-body baseline, five years, no push</td><td>Energy constant</td><td>1e-9 relative drift</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="6"><td>6</td><td>Earth–Moon barycentre orbit</td><td>365.256 days</td><td>±0.1 day</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="7"><td>7</td><td>Hohmann transfer, 1 AU → 1.524 AU</td><td>2.94 + 2.65 km/s; about 259 days</td><td>±0.02 km/s per burn; ±2 days</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="8"><td>8</td><td>1e-8 m/s² tangential push for one year</td><td>Semi-major axis grows about 3,170 km</td><td>±1%</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+          <tr data-bench="9"><td>9</td><td>Cantilever under uniform self-weight q</td><td>Root moment qL²/2; tip deflection qL⁴/8EI</td><td>±1%</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Equation check only; not a launcher-arm pass.</td></tr>
+          <tr data-bench="10"><td>10</td><td>Equilibrium temperature: 1 AU, albedo 0.306</td><td>About 254 K</td><td>±2 K</td><td><span class="status pending">not loaded</span></td><td class="detail tiny">Run through the server or `--check`.</td></tr>
+        </tbody>
+      </table></div>
+      <p class="tiny">Benchmark 8 is an isolated Sun–Earth two-body RK4 reference with a constant acceleration along velocity; continuous thrust is not a control in the main ejector mission model. Benchmark 9 validates beam/cantilever equations only and does not certify any launcher segment or hinge.</p>
+      <div id="benchNote" class="callout">Benchmark results are not loaded. From the project folder run <code>python octoearth_rl.py --check</code>; it prints every measured value and exits nonzero if any check fails.</div>
+    </section>
+
+    <section id="enablers">
+      <h2>6 · Enablers, energy and forbidden shortcuts</h2>
+      <p>OCTO-EARTH declares <b>exactly three individual enablers</b>—separate assumptions, not bundled systems. The supplied guide allows up to three hypothetical enablers and notes that fewer / smaller assumptions score more honestly. These selections do not establish that supporting equipment is ordinary, feasible, safe or certified.</p>
+      <div class="table-scroll"><table><thead><tr><th>Enabler</th><th>Single selected assumption</th><th>Why selected / modeled scope</th><th>Boundary / unresolved gap</th></tr></thead><tbody>
+        <tr><td>E1</td><td>Access to a finite 3×10<sup>22</sup> kg asteroid.</td><td>Reaction mass is mission-critical. The model tracks a finite reservoir, ejected packets and Earth recoil.</td><td>Asteroid capture, docking and placement are not simulated or demonstrated. The launch ring, eight arms, power conditioning / reserve and directional radiators are separate supporting systems; launch damage remains unresolved.</td></tr>
+        <tr><td>E2</td><td>Thin-film photovoltaic collector field.</td><td>Five million collectors at 0.5 AU intercept the configured 30% of solar output; panel conversion and the energy ledger are represented.</td><td>Industrial scale and deployment are unverified. Microwave transmitters, rectennas, sail-tilt station keeping, clear lanes, factories and Mercury feedstock are separately listed supporting equipment / assumptions.</td></tr>
+        <tr><td>E3</td><td>Space-mirror ring.</td><td>Reflection is used to supply sunlight to the simplified climate model at the target orbit; mirrors create no energy.</td><td>Configured area, real orbits, formation flight, pointing and local illumination are not validated. Orbit / pointing support is separately listed.</td></tr>
+      </tbody></table></div>
+      <p class="tiny">Support hardware is itemized separately in the technical brief and calculation report. Calling it “support” is only a classification choice: power levels, material loads, thermal rejection, capture, deployment and safe operation still require independent engineering evidence.</p>
+      <div class="grid">
+        <div class="card span6"><h3>Allowed only when bounded and declared</h3><p>Examples in the guide include a stated power source and waste heat, energy-density-limited storage, specified high-strength arms, superconducting current density, prebuilt ring/arms, delivered raw material, ideal control/motors, external-field plasma contact and specified asteroid mass. Fewer, smaller enablers are more scientifically honest.</p></div>
+        <div class="card span6"><h3>Not allowed</h3><p>No reactionless thrust; no broken conservation laws; do not switch off gravity, inertia or Earth’s field; do not assume climate stays constant; do not ignore structural loads. The simulation must expose the reaction body and source of every joule.</p></div>
+      </div>
+      <p class="tiny">Energy-bonus credit is not claimed here. The guide awards up to +10 only when a real modeled source supplies the energy within the time limit; source scale, construction, efficiency and waste heat must be shown.</p>
+    </section>
+
+    <section id="crosswalk">
+      <h2>7 · OCTO-EARTH implementation crosswalk</h2>
+      <div class="table-scroll"><table><thead><tr><th>Requirement area</th><th>Current project coverage</th><th>Honest status</th></tr></thead><tbody>
+        <tr><td>Sun–Earth–Moon gravity and orbit</td><td>High-fidelity N-body includes Sun, Earth, Moon, Mars, Mercury, Venus, Jupiter and explicit fragments; fast training model includes a gravitating Moon and approximate planetary perturbations.</td><td class="good">Implemented with documented model differences.</td></tr>
+        <tr><td>Mass, ejection and reaction momentum</td><td>Finite asteroid reservoir; packets/fates and high-fidelity fragment gravity; recoil and energy/momentum/angular-momentum ledgers; no direct RL velocity edit.</td><td class="good">Implemented; fast model uses documented trajectory approximations.</td></tr>
+        <tr><td>Long-duration orbit numerics</td><td>64-bit state, Yoshida-4 N-body integrator, timestep-convergence checks; fast model uses exact two-body Kepler drifts. Collector-belt station keeping uses Encke deviation equations.</td><td class="good">Implemented for orbital state, not fast hardware dynamics.</td></tr>
+        <tr><td>Post-arrival maintenance</td><td>Training continues for the configured <code>validate_years</code> hold after first target capture; orbit and climate must remain in tolerance, the clock resets on exit, and progress is recorded. High-fidelity evaluation then applies a separate passive coast check.</td><td class="good">Implemented as a project-defined internal criterion; not a new rulebook threshold.</td></tr>
+        <tr><td>Habitability</td><td>Two-box temperature model with ice–albedo feedback, mirror light, ice line and growing-area indicators; no-mirror counterfactual. Climate stays part of the controlled hold.</td><td class="caution">Simplified climate, not full atmosphere, ocean, biosphere or radiation-shielding simulation.</td></tr>
+        <tr><td>Solar power / waste heat</td><td>Collector-to-microwave-to-rectenna chain, finite reserve, beam and heat ledgers, mirror energy accounting.</td><td class="caution">Hypothetical hardware and some construction costs / structural realities are not fully modeled.</td></tr>
+        <tr><td>Structural safety for main launcher</td><td>General formula helpers and the cantilever benchmark; launcher parameters and loads remain documented assumptions.</td><td class="bad">NOT VERIFIED: no segment/hinge stress, buckling, fatigue or dynamic SF ≥ 1.5 pass.</td></tr>
+        <tr><td>p40 failed concept 1 structure</td><td>Stylized reflector-arm load proxy now displays SF and warns at the guide’s 1.5 floor; break cascade remains illustrative.</td><td class="caution">Demonstration only; cannot certify material or hardware survival.</td></tr>
+        <tr><td>Lorentz propulsion</td><td>Independent failed-concept calculation and visual model; current closure and external reaction path are explicitly idealized.</td><td class="caution">Not coupled as a validated field/circuit/structure model to the main launcher.</td></tr>
+        <tr><td>Other rulebook safety thresholds</td><td>Mars safety limits are configurable in the main simulation; other supplied-guide appendix values are absent.</td><td class="caution">Do not invent absent thresholds; verify with the event rulebook.</td></tr>
+        <tr><td>Failed concepts vs main launcher</td><td>Four failed-model screens: (1) merged Dyson-powered laser + arm-held collector; (2) hydrogen harvesting; (3) superconducting Lorentz arms; (4) Earth-derived thrusters with a stated propellant budget. They are separate from the main launcher.</td><td class="good">Kept independent from the asteroid mass-driver/RL model.</td></tr>
+      </tbody></table></div>
+      <p>The p40 page retains the Sun, 1 AU orbit, 2.7 AU target and Moon; compressed distances are labeled schematic. Model 4 adds an Earth-derived thruster case with a fixed 10 km/s exhaust-speed assumption and an explicit propellant budget; its rocket-equation result is a separate demonstration and does not remove mass from the main simulation. Models 2–4 use their own mechanism art; only model 1 uses the shared main-launcher arm meshes to hold the collector. All four screens are independent of the main simulation and training behavior.</p>
+    </section>
+
+    <section id="judging">
+      <h2>8 · Judging and submission checklist from the guide</h2>
+      <div class="table-scroll"><table><thead><tr><th>Criterion</th><th>Marks</th><th>What this project should show</th></tr></thead><tbody>
+        <tr><td>Physical correctness</td><td>30</td><td>Force and reaction, energy/momentum ledger, masses and loads.</td></tr>
+        <tr><td>Validation and numerical rigour</td><td>20</td><td>Ten benchmarks, convergence, baseline drift, tolerances.</td></tr>
+        <tr><td>Scientific honesty</td><td>15</td><td>Declared enablers, assumptions, failed concepts and unmodeled structure.</td></tr>
+        <tr><td>Simulation depth</td><td>15</td><td>Orbital dynamics, mass depletion, fragments, habitability, environment.</td></tr>
+        <tr><td>Visualisation and usability</td><td>10</td><td>Readable, labeled scales, separate POVs, live telemetry.</td></tr>
+        <tr><td>Presentation and questions</td><td>10</td><td>Explain the estimate, forces, ledger, safety, benchmark results and next tests.</td></tr>
+        <tr><td>Optional energy bonus</td><td>+10</td><td>Only for a real modeled energy source covering the need in time; no automatic credit.</td></tr>
+      </tbody></table></div>
+      <ul>
+        <li>Runnable simulation and source with a setup/run/test README.</li>
+        <li>Technical report of at most 8 pages: concept, enablers, models and labels, equations, benchmarks, results and limits.</li>
+        <li>Conservation/baseline record and full momentum ledger for the propulsion run.</li>
+        <li>Demo video at most 3 minutes; 7-minute pitch followed by 5 minutes of questions.</li>
+      </ul>
+      <p class="tiny">Suggested pitch timing: one-picture concept (30 s); scale estimate and enablers (1 min); live deployment/forces/ledger (2 min); orbit and safety result (2 min); benchmark results and next tests (1.5 min).</p>
+    </section>
+  </main>
+  <footer class="foot">This is a requirements crosswalk, not a claim of rulebook compliance or a structural certification. Run <code>python octoearth_rl.py --check</code> for reproducible numerical results. See <code>README.md</code> and <code>CALCULATIONS_REPORT.html/.pdf</code> for fuller project calculations.</footer>
+</div>
+<script>
+(async function(){
+  const pill=document.getElementById('liveStatus'), note=document.getElementById('benchNote');
+  try{
+    const res=await fetch('/api/results',{cache:'no-store'});
+    if(!res.ok) throw new Error('API not available');
+    const data=await res.json(), items=data.guide_benchmarks||[];
+    if(!items.length) throw new Error('benchmarks not run in this session');
+    let pass=0;
+    for(const item of items){
+      const row=document.querySelector(`[data-bench="${item.benchmark}"]`);
+      if(!row) continue;
+      const badge=row.querySelector('.status');
+      badge.textContent=item.passed?'PASS':'FAIL';
+      badge.className=`status ${item.passed?'pass':'fail'}`;
+      row.querySelector('.detail').textContent=item.detail;
+      if(item.passed) pass++;
+    }
+    pill.textContent=`guide benchmarks: ${pass}/${items.length} PASS`;
+    pill.style.color=pass===items.length?'var(--green)':'var(--rose)';
+    note.textContent=`Live run: ${pass} of ${items.length} guide benchmarks passed. Full results are also written to outputs/guide_benchmarks.json; run python octoearth_rl.py --check to run the complete suite.`;
+  }catch(_){
+    pill.textContent='guide benchmark results: run --check';
+    note.textContent='Live results are available when this page is opened from the running OCTO-EARTH server. From the project folder run python octoearth_rl.py --check; it prints every measured value and exits nonzero if any check fails.';
+  }
+})();
+</script>
+</body>
+</html>

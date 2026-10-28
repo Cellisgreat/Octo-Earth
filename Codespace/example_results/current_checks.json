@@ -1,0 +1,31 @@
+{
+  "generated_local": "2026-10-27T19:50:18+05:30",
+  "source": "octoearth_rl.py --check (full physics-check path); no PPO training/evaluation run",
+  "physics_checks": {
+    "count": 22,
+    "passed": 22,
+    "failed": 0,
+    "file": "physics_checks.json"
+  },
+  "guide_benchmarks": {
+    "count": 10,
+    "passed": 10,
+    "failed": 0,
+    "file": "guide_benchmarks.json"
+  },
+  "test_suite": {
+    "command": "python -m pytest -q tests",
+    "passed": 46,
+    "failed": 0
+  },
+  "rl_evaluation": {
+    "current_training_environment_version": "controlled-target-hold-v1",
+    "ppo_retraining_performed": false,
+    "current_target_hold_evaluation_performed": false,
+    "claim": "No current-version PPO success is claimed."
+  },
+  "hardware_certification": {
+    "performed": false,
+    "claim": "No hardware design or structural safety certification is claimed."
+  }
+}

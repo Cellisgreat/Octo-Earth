@@ -1,0 +1,7 @@
+# Historical training archive — pre-controlled-hold environment
+
+These files preserve the run generated on 2026-10-25, before the controlled target-hold update. The old PPO environment ended an episode at the first qualifying target-and-climate state; its reported successes do **not** demonstrate maintenance after arrival. The high-fidelity coast was a separate passive check, not an agent-controlled hold.
+
+The archive is kept for provenance and to reproduce the earlier report only. Its `best_model.zip`, `last_model.zip`, evaluation metrics, comparison rows, training CSV and config are pre-hold artifacts, not current-version evidence. The `physics_checks.json`, `guide_benchmarks.json` and `current_checks.json` files were refreshed on 2026-10-27: 22 current physics checks + 10 guide benchmarks + 46 tests passed. These checks verify code and hold mechanics; they do not measure PPO learning. The current training environment is `controlled-target-hold-v1`; the application rejects old or untagged checkpoints and archives pre-hold result files. No PPO retraining or maintenance-performance evaluation has yet been completed for the new environment.
+
+`validate_years = 200` was already a project configuration value for the earlier passive stability test. The current code also uses that configurable value for an active controlled hold inside each training episode; neither use should be represented as an added rulebook requirement.

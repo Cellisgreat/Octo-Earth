@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:15,000
+OCTO-EARTH is a hypothetical simulation of moving the Earth–Moon system outward
+while tracking momentum, energy and a simplified habitability proxy.
+
+2
+00:00:15,000 --> 00:00:38,000
+Earth does not teleport. In the model it moves only through reaction to ejected mass.
+Orbital changes are calculated from the evolving state; the viewer is not the physics engine.
+
+3
+00:00:38,000 --> 00:01:02,000
+The selected reaction-mass enabler is access to a finite asteroid. Eight supporting arms
+throw one packet together; the Earth–Moon system recoils. Fragments keep their velocities
+and are tracked, not deleted.
+
+4
+00:01:02,000 --> 00:01:27,000
+A separate thin-film photovoltaic field is the modeled energy source. Supporting transmitters
+and rectennas carry power to the arms. The ledger accounts for conversion losses, heat, spill
+and packet energy; it does not certify a real power network.
+
+5
+00:01:27,000 --> 00:01:49,000
+Five million collectors at half an AU intercept the configured 30 percent of solar output.
+A separate mirror ring redirects sunlight to the simplified two-box climate model at the target.
+Mirrors redirect light; they do not create energy.
+
+6
+00:01:49,000 --> 00:02:11,000
+The orbit and energy traces come from simulation state. Earth’s atmospheric and space-weather
+layers, clouds, winds and storms are illustrative. Climate is a global-mean proxy, not a full
+Earth system or proof of habitability.
+
+7
+00:02:11,000 --> 00:02:32,000
+The project’s internal criteria include orbital-plane inclination in degrees and an absolute
+final eccentricity tolerance. They are not official tilt or eccentricity-change limits from the
+supplied PDFs. The current PPO has not been retrained or evaluated on target hold.
+
+8
+00:02:32,000 --> 00:02:48,000
+Four model screens fail their scale checks. At ten kilometres per second, ejecting one times ten to
+the twenty-third kilograms from Earth yields only 169 metres per second; the ideal requirement is
+about 4.11 times ten to the twenty-four kilograms.
+
+9
+00:02:48,000 --> 00:03:00,000
+Forty-eight tests pass with one PyTorch-dependent device benchmark deselected; this sandbox lacks
+the dependency. The physics-check entrypoint is also blocked by missing packages. Hardware,
+structural safety and current RL performance remain unverified.

@@ -1,0 +1,92 @@
+[
+  {
+    "benchmark": 1,
+    "name": "Lorentz force on a straight wire",
+    "expected": "10 N along +z",
+    "tolerance": "relative vector error ≤ 1e-9",
+    "passed": true,
+    "detail": "F = [0, 0, 10] N; vector relative error 0.00e+00",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 2,
+    "name": "Closed loop in a uniform magnetic field",
+    "expected": "net force 0",
+    "tolerance": "≤ 1e-9 of I·L·B",
+    "passed": true,
+    "detail": "net force = 1.002e-13 N; relative to I·L·B = 2.33e-16",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 3,
+    "name": "Biot–Savart field of a long wire",
+    "expected": "2.000e-4 T at 1 m, 1 kA",
+    "tolerance": "relative error ≤ 1e-6",
+    "passed": true,
+    "detail": "B(1 m, 1 kA) = 0.0002 T; relative error 0.00e+00",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 4,
+    "name": "Eccentric Kepler orbit, 10 periods",
+    "expected": "return within 1e-6 a; energy within 1e-9",
+    "tolerance": "as stated",
+    "passed": true,
+    "detail": "a = 1 AU, e = 0.3, 10 periods: return error 6.47e-14 a; specific-energy drift 0.00e+00",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 5,
+    "name": "Five-year solar-system energy baseline",
+    "expected": "energy constant",
+    "tolerance": "relative drift ≤ 1e-9",
+    "passed": true,
+    "detail": "5 simulated years, no thrust, 6 h Yoshida-4 step: |ΔE/E| = 1.29e-11",
+    "seconds": 0.004
+  },
+  {
+    "benchmark": 6,
+    "name": "Earth–Moon barycentre period",
+    "expected": "365.256 days",
+    "tolerance": "± 0.1 day",
+    "passed": true,
+    "detail": "Earth-Moon barycentre sidereal period = 365.256343 days; error 0.0003 day",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 7,
+    "name": "Hohmann transfer, 1 to 1.524 AU",
+    "expected": "2.94 + 2.65 km/s; ~259 days",
+    "tolerance": "±0.02 km/s per burn; ±2 days",
+    "passed": true,
+    "detail": "Δv = 2.9461 + 2.6500 km/s; transfer time = 258.92 days",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 8,
+    "name": "Gauss orbit growth under 1e-8 m/s² tangential push",
+    "expected": "~3,170 km in 1 year",
+    "tolerance": "± 1%",
+    "passed": true,
+    "detail": "a grows by 3,170.1 km in 1 simulated year; one-day RK4 steps; relative error vs 3,170 km = 0.002%",
+    "seconds": 0.011
+  },
+  {
+    "benchmark": 9,
+    "name": "Uniform-load cantilever self-weight screen",
+    "expected": "M = qL²/2; δ = qL⁴/(8EI)",
+    "tolerance": "relative formula error ≤ 1%",
+    "passed": true,
+    "detail": "root moment qL²/2 = 5e+03 N·m; tip deflection qL⁴/8EI = 0.00625 m; numerical relative errors M=0.00e+00, δ=6.25e-08; example bending SF=50.00 (illustrative inputs only)",
+    "seconds": 0.0
+  },
+  {
+    "benchmark": 10,
+    "name": "Blackbody equilibrium at 1 AU, albedo 0.306",
+    "expected": "~254 K",
+    "tolerance": "± 2 K",
+    "passed": true,
+    "detail": "1 AU, albedo 0.306: blackbody effective temperature = 254.03 K; difference from 254 K = 0.03 K",
+    "seconds": 0.0
+  }
+]
