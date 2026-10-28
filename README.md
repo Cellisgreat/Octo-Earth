@@ -1,4 +1,5 @@
 # OCTO-EARTH prototype
+# Team Name : KHUSH_KHUSH_KHUSH
 
 A PPO agent ejects asteroid mass from Earth so the recoil moves Earth from 1 AU to 2.7 AU. A 3-D browser viewer shows the results.
 
